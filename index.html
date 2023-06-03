@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="main">
+    <div id="page">
+        <div id="circle"></div>
+        <div id="nav">
+            <!-- <img src="data:image/png;base64,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" alt=""> -->
+         <h4>Solution</h4>
+         <h4>Tool</h4>
+         <h4>About</h4>
+         <h4>Insight</h4>
+         <button>Menu</button>
+        </div>
+        <div id="right">
+           <img src="./block.png" alt="">
+        </div>
+        <div id="left">
+            <h1>Invest in the future of blockchain</h1>
+            <button>Learn More <i class="ri-arrow-right-s-fill"></i></button>
+        </div>
+    </div>
+    <i class="ri-arrow-right-circle-line"></i>
+    <div id="page1">
+        <h1>Our Solution</h1>
+        <div id="cards">
+            <div id="card1">
+                <img src="https://i.pinimg.com/originals/05/a0/48/05a04820091954cc7bd6a25e4fa7681f.gif" alt="" srcset="">
+                <h1>Infrastructure</h1>
+                <p>Build on our complete open source blockchains protocol layer for business.</p>
+                <button>Learn More </button>
+            </div>
+            <div id="card2">
+                <img src="https://i.pinimg.com/originals/a4/15/54/a415545bb9a81e35d09b2fc184e2e801.gif" alt="">
+                <h1>Application</h1>
+                <p>Optimize Business processes and create digital assets on our ent-to end blockchain operation system</p>
+              <button>Get Started</button>
+            </div>
+            <div id="card3">
+                <img src="https://i.pinimg.com/originals/0c/84/5e/0c845e2857bbb47bec9dad40c2222ada.gif" alt="" srcset="">
+              <h1>Security</h1>
+              <p>Increase smart contact security and avoid costly errors with our industry leading security sevice</p>
+              <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div id="page2">
+        <div id="le">
+       <!-- <img src="https://cdn.dribbble.com/users/1774872/screenshots/5477893/tachyon-2-dr.gif" alt=""> -->
+       <img src="https://i.pinimg.com/originals/0f/b2/88/0fb288a519fdb745d0b773d87a6aaf2e.gif" alt="" srcset="">
+       <h1> The Transmission Blockchain</h1>
+       <p>A Blockchain Infrastructure loyal to the essence of the technology is designed to be more efficient and scalable than traditional blockchains.</p>
+       </div>
+    </div>
+    <div id="page3">
+        <img src="https://cdn.dribbble.com/users/1774872/screenshots/5477893/tachyon-2-dr.gif" alt="" srcset="">
+        <h1>Blockchain will the world</h1>
+    </div>
+    <!-- <div id="page4"></div> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+        integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+        integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/textillate@0.4.1/jquery.textillate.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
